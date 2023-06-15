@@ -9,16 +9,15 @@ import { multiaddr, Multiaddr } from '@multiformats/multiaddr';
 import { peerIdFromString } from '@libp2p/peer-id';
 import { PeerId } from '@libp2p/interface-peer-id';
 import { OPEN } from '@libp2p/interface-connection/status';
-import { Chain, stringify } from 'viem';
+import { stringify } from 'viem';
 import {
   OfferData,
   GenericOfferOptions,
   GenericQuery,
-  Contracts,
   RequestData,
 } from '../shared/types.js';
 import { centerSub, CenterSub } from '../shared/pubsub.js';
-import { ChainsConfigOption, ServerAddressOption } from '../shared/options.js';
+import { ServerAddressOption } from '../shared/options.js';
 import { encodeText, decodeText } from '../utils/text.js';
 import { createLogger } from '../utils/logger.js';
 
